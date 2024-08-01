@@ -1,0 +1,26 @@
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+.section-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80vw;
+}
+
+.section-container-taskinput {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75vw;
+}
+
+.task-item.completed {
+    text-decoration: line-through;
+    color: gray;
+  }

@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    font-weight: 600;
+    color: rebeccapurple;
+} 
