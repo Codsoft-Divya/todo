@@ -49,21 +49,23 @@ const Section = () => {
   return (
     <div className='section'>
         <div className='section-container'>
-            <form className='section-container-taskinput' onSubmit={handleSubmit}>
-                <input type="text"
-                  placeholder='Enter Task'
-                  value={task}
-                  onChange={handleInputChange}
-                />
-                <button type='submit'>{isEditing ? 'Update' : 'Submit'}</button>
-            </form>
+            <div className='section-container-input'>
+              <form className='section-container-taskinput' onSubmit={handleSubmit}>
+                  <input type="text"
+                    placeholder='Enter Task'
+                    value={task}
+                    onChange={handleInputChange}
+                  />
+                  <button type='submit'>{isEditing ? 'Update' : 'Submit'}</button>
+              </form>
+            </div>
             <div className='section-container-tasklist'>
               {tasks.map((task, index) => (
                 <div key={index} className={`task-item ${task.completed ? 'completed' : ''}`}>
                   {task.text}
-                  <button onClick={() => handleEdit(index)}>Edit</button>
-                  <button onClick={() => handleDelete(index)}>Delete</button>
-                  <button onClick={() => handleComplete(index)}>Complete</button>
+                  <button className='edit' onClick={() => handleEdit(index)}>Edit</button>
+                  <button className='delete' onClick={() => handleDelete(index)}>Delete</button>
+                  <button className='complete' onClick={() => handleComplete(index)}>Complete</button>
                 </div>
               ))}
             </div>

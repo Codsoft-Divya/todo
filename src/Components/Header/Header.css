@@ -3,6 +3,8 @@
     align-items: center;
     justify-content: center;
     width: 100vw;
+    height: 15vh;
+    background-color: rgb(219, 18, 219);
 }
 
 .header-container {
@@ -13,5 +15,5 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 3rem;
     font-weight: 600;
-    color: rebeccapurple;
+    color: rgb(0, 0, 0);
 } 
